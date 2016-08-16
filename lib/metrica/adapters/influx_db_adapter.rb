@@ -22,7 +22,7 @@ module Metrica
           username: config[:username],
           password: config[:password],
           async:    true,
-          time_precision: 'u'
+          time_precision: 'µ' # microseconds
         )
       end
 
