@@ -1,6 +1,6 @@
 # Metrica
 
-[![Build Status](https://travis-ci.org/dimianstudio/Metrica.svg?branch=master)](https://travis-ci.org/dimianstudio/Metrica)
+[![Build Status](https://travis-ci.org/dimianstudio/metrica.svg?branch=master)](https://travis-ci.org/dimianstudio/metrica)
 
 Simple gem for pushing metrics into different sources
 
