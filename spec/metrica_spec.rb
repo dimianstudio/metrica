@@ -38,4 +38,11 @@ describe Metrica do
       Metrica.write_point('test', 'value')
     end
   end
+
+  describe '#query(query)' do
+    it 'should call query of appropriate adapter' do
+      allow(Metrica.service).to receive(:query).with('SELECT * FROM metrics').once
+      Metrica.query('SELECT * FROM metrics')
+    end
+  end
 end

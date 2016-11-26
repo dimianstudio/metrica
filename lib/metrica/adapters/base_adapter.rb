@@ -7,6 +7,9 @@ module Metrica
 
       def write_point(name, data)
       end
+
+      def query(query)
+      end
     end
   end
 end

@@ -20,5 +20,9 @@ module Metrica
     def write_point(name, data)
       service.write_point(name, data)
     end
+
+    def query(query)
+      service.query(query)
+    end
   end
 end

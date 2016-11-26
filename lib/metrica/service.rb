@@ -7,5 +7,9 @@ module Metrica
     def write_point(name, data)
       @adapter.write_point(name, data)
     end
+
+    def query(query)
+      @adapter.query(query)
+    end
   end
 end

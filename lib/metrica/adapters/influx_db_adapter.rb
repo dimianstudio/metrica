@@ -37,6 +37,10 @@ module Metrica
         @client.write_point(name, data)
       end
 
+      def query(query)
+        @client.query(query)
+      end
+
       private
 
       def check_and_create_db!(config)
