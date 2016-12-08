@@ -21,8 +21,8 @@ module Metrica
           port:     config[:port],
           username: config[:username],
           password: config[:password],
-          async:    true,
-          time_precision: 'us' # microseconds
+          async:    config[:async].nil? ? true : config[:async],
+          time_precision: config[:time_precision] || 'us' # microseconds
         )
       end
 
